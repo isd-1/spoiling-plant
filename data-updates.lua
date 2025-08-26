@@ -18,6 +18,7 @@ local function create_spoilage_recipe(item)
 		icon = item.icon,
 		icon_size = 64,
 		hide_from_player_crafting = true,
+		auto_recycle = false
 	}
 end
 
