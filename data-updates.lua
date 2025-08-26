@@ -7,7 +7,7 @@ local function create_spoilage_recipe(item)
 	return {
 		type = "recipe",
 		name = "spoil-" .. item.name,
-		localised_name = { "", "Spoil ", { "item-name." .. item.name } },
+		localised_name = { "", {"recipe-replace-template.spoiling-plant-key-spoil"}, { "item-name." .. item.name } },
 		ingredients = {
 			{ type = "item", name = item.name, amount = 1 },
 		},
